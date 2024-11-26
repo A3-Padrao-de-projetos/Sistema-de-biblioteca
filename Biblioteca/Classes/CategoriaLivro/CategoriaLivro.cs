@@ -1,20 +1,20 @@
 ﻿using System;
-using Biblioteca.Classes.Livro.Livro;
+using Biblioteca.Classes.Livro;
 
-namespace Biblioteca.Classes.CategoriaLivro.CategoriaLivro
+namespace Biblioteca.Classes.CategoriaLivro
 {
-    public class CategoriaLivro
+    public class CategoriaLivros
     {
         private static int newID = 1;
-        private int CategoriaLivroID { get; private set; }
-        private string Nome { get; set; }
-        private List<Livro> Livros { get; set; }
+        public int CategoriaLivroID { get; private set; }
+        public string Nome { get; set; }
+        public List<Livros> Livros { get; set; }
 
-        public CategoriaLivro(string nome)
+        public CategoriaLivros(string nome)
         {
-            this.CategoriaLivroID = newID++;
-            this.Nome = nome;
-            this.Livros = new List<Livro>();
+            CategoriaLivroID = newID++;
+            Nome = nome;
+            Livros = new List<Livros>();
         }
     }
 }

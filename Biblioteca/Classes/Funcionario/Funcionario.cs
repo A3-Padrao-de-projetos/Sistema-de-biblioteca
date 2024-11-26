@@ -1,37 +1,37 @@
 ﻿using System;
-using Biblioteca.Classes.Biblioteca.Biblioteca;
-using Biblioteca.Classes.Notificacao.Notificacao;
-using Biblioteca.Classes.Cliente.Cliente;
+using Biblioteca.Classes.Biblioteca;
+using Biblioteca.Classes.Notificacao;
+using Biblioteca.Classes.Cliente;
 
-namespace Biblioteca.Classes.Funcionario.Funcionario
+namespace Biblioteca.Classes.Funcionario
 {
-    public class Funcionario
+    public class Funcionarios
     {
         private static int newID = 1;
-        private int FuncionarioID { get; private set }
-        private string Nome { get; set; }
-        private string CPF { get; set; }
-        private string Cargo { get; set; }
-        private decimal Salario { get; set; }
-        private int BibliotecaID { get; set; }
-        private Biblioteca Biblioteca { get; set; }
-        private List<Notificacao> Notificacoes { get; set; }
+        public int FuncionarioID { get; set; }
+        public string Nome { get; set; }
+        public string CPF { get; set; }
+        public string Cargo { get; set; }
+        public decimal Salario { get; set; }
+        public int BibliotecaID { get; set; }
+        public Bibliotecas Biblioteca { get; set; }
+        public List<Notificacoes> Notificacoes { get; set; }
 
-        public Funcionario(string nome, string CPF, string cargo, decimal salario, Biblioteca biblioteca)
+        public Funcionarios(string nome, string CPF, string cargo, decimal salario, Bibliotecas biblioteca)
         {
-            this.FuncionarioID = newID++;
-            this.Nome = nome;
+            FuncionarioID = newID++;
+            Nome = nome;
             this.CPF = CPF;
-            this.Cargo = cargo;
-            this.Salario = salario;
-            this.Biblioteca = biblioteca;
-            this.BibliotecaID = biblioteca.BibliotecaID;
-            this.Notificacoes = new List<Notificacao>();
+            Cargo = cargo;
+            Salario = salario;
+            Biblioteca = biblioteca;
+            BibliotecaID = biblioteca.BibliotecaID;
+            Notificacoes = new List<Notificacoes>();
         }
 
-        public void EnviarNotificacao(Cliente cliente, string mensagem)
+        public void EnviarNotificacao(Clientes cliente, string mensagem)
         {
-            Notificacao notificacao = new Notificacao(Notificacoes.Count + 1, mensagem, DateTime.Now, membro, this);
+            Notificacoes notificacao = new(mensagem, DateTime.Now, cliente, this);
 
             Notificacoes.Add(notificacao);
 

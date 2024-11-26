@@ -1,14 +1,16 @@
 ﻿using System;
+using Biblioteca.Classes.Biblioteca;
+using Biblioteca.Classes.CategoriaLivro;
+using Biblioteca.Program;
 
-public class Main
+public class Tela
 {
     static void Main(string[] args)
     {
-        // Instâncias iniciais
-        var biblioteca = new Biblioteca(1, "Biblioteca UNA", "Av. Maria da Glória Rocha, 175");
-        // var categoriaLivro = new CategoriaLivro(1, "Ficção Científica");
+        Bibliotecas biblioteca = new Bibliotecas("Biblioteca UNA", "Av. Maria da Glória Rocha, 175");
+        CategoriaLivros categoriaLivro = new CategoriaLivros("Ficção Científica");
+        Program program = new Program();
 
-        // Menu interativo
         while (true)
         {
             Console.Clear();
@@ -27,22 +29,22 @@ public class Main
             switch (opcao)
             {
                 case "1":
-                    AdicionarLivro(biblioteca, categoriaLivro);
+                    program.AdicionarLivro(biblioteca, categoriaLivro);
                     break;
                 case "2":
-                    AdicionarMembro(biblioteca);
+                    program.AdicionarCliente(biblioteca);
                     break;
                 case "3":
-                    AdicionarFuncionario(biblioteca);
+                    program.AdicionarFuncionario(biblioteca);
                     break;
                 case "4":
-                    RealizarEmprestimo(biblioteca);
+                    program.RealizarEmprestimo(biblioteca);
                     break;
                 case "5":
-                    EnviarNotificacao(biblioteca);
+                    program.EnviarNotificacao(biblioteca);
                     break;
                 case "6":
-                    ListarLivros(biblioteca);
+                    program.ListarLivros(biblioteca);
                     break;
                 case "7":
                     Console.WriteLine("Saindo...");

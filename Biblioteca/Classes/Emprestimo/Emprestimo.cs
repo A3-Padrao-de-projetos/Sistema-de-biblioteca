@@ -1,34 +1,34 @@
 ﻿using System;
-using Biblioteca.Classes.Livro.Livro;
-using Biblioteca.Classes.Funcionario.Funcionario;
-using Biblioteca.Classes.Cliente.Cliente;
+using Biblioteca.Classes.Cliente;
+using Biblioteca.Classes.Funcionario;
+using Biblioteca.Classes.Livro;
 
-namespace Biblioteca.Classes.Emprestimo.Emprestimo
+namespace Biblioteca.Classes.Emprestimo
 {
-    public class Emprestimo
+    public class Emprestimos
     {
         private static int newID = 1;
-        private int EmprestimoID { get; private set; }
-        private DateTime DataEmprestimo { get; set; }
-        private DateTime DataDevolucao { get; set; }
-        private int LivroID { get; set; }
-        private Livro Livro { get; set; }
-        private int ClienteID { get; set; }
-        private Cliente cliente { get; set; }
-        private int? FuncionarioID { get; set; }
-        private Funcionario Funcionario { get; set; }
+        public int EmprestimoID { get; private set; }
+        public DateTime DataEmprestimo { get; set; }
+        public DateTime DataDevolucao { get; set; }
+        public int LivroID { get; set; }
+        public Livros Livro { get; set; }
+        public int ClienteID { get; set; }
+        public Clientes Cliente { get; set; }
+        public int? FuncionarioID { get; set; }
+        public Funcionarios Funcionario { get; set; }
 
-        public Emprestimo(int emprestimoID, DateTime dataEmprestimo, DateTime dataDevolucao, Livro livro, Cliente cliente, Funcionario funcionario = null)
+        public Emprestimos(DateTime dataEmprestimo, DateTime dataDevolucao, Livros livro, Clientes cliente, Funcionarios funcionario = null)
         {
-            this.EmprestimoID = newID++;
-            this.DataEmprestimo = dataEmprestimo;
-            this.DataDevolucao = dataDevolucao;
-            this.Livro = livro;
-            this.LivroID = livro.LivroID;
-            this.Cliente = cliente;
-            this.ClienteID = cliente.ClienteID;
-            this.Funcionario = funcionario;
-            this.FuncionarioID = funcionario?.FuncionarioID;
+            EmprestimoID = newID++;
+            DataEmprestimo = dataEmprestimo;
+            DataDevolucao = dataDevolucao;
+            Livro = livro;
+            LivroID = livro.LivroID;
+            Cliente = cliente;
+            ClienteID = cliente.ClienteID;
+            Funcionario = funcionario;
+            FuncionarioID = funcionario?.FuncionarioID;
         }
     }
 }

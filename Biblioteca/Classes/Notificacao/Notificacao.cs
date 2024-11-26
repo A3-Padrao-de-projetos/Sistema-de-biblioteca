@@ -1,29 +1,29 @@
 ﻿using System;
-using Biblioteca.Classes.Cliente.Cliente;
-using Biblioteca.Classes.Funcionario.Funcionario;
+using Biblioteca.Classes.Cliente;
+using Biblioteca.Classes.Funcionario;
 
-namespace Biblioteca.Classes.Notificacao.Notificacao
+namespace Biblioteca.Classes.Notificacao
 {
-    public class Notificacao
+    public class Notificacoes
     {
         private static int newID = 1;
-        private int NotificacaoID { get; private set; }
-        private string Mensagem { get; set; }
-        private DateTime DataEnvio { get; set; }
-        private int ClienteID { get; set; }
-        private Cliente cliente { get; set; }
-        private int? FuncionarioID { get; set; }
-        private Funcionario Funcionario { get; set; }
+        public int NotificacaoID { get; private set; }
+        public string Mensagem { get; set; }
+        public DateTime DataEnvio { get; set; }
+        public int ClienteID { get; set; }
+        public Clientes Cliente { get; set; }
+        public int? FuncionarioID { get; set; }
+        public Funcionarios Funcionario { get; set; }
 
-        public Notificacao(string mensagem, DateTime dataEnvio, Cliente cliente, Funcionario funcionario = null)
+        public Notificacoes(string mensagem, DateTime dataEnvio, Clientes cliente, Funcionarios funcionario)
         {
-            this.NotificacaoID = newID++;
-            this.Mensagem = mensagem;
-            this.DataEnvio = dataEnvio;
-            this.Cliente = cliente;
-            this.ClienteID = cliente.ClienteID;
-            this.Funcionario = funcionario;
-            this.FuncionarioID = funcionario?.FuncionarioID;
+            NotificacaoID = newID++;
+            Mensagem = mensagem;
+            DataEnvio = dataEnvio;
+            Cliente = cliente;
+            ClienteID = cliente.ClienteID;
+            Funcionario = funcionario;
+            FuncionarioID = funcionario?.FuncionarioID;
         }
 
         public void Enviar()

@@ -1,0 +1,14 @@
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\obj\Debug\net9.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\obj\Debug\net9.0\Biblioteca.AssemblyInfoInputs.cache
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\obj\Debug\net9.0\Biblioteca.AssemblyInfo.cs
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\obj\Debug\net9.0\Biblioteca.csproj.CoreCompileInputs.cache
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\bin\Debug\net9.0\Biblioteca.exe
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\bin\Debug\net9.0\Biblioteca.deps.json
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\bin\Debug\net9.0\Biblioteca.runtimeconfig.json
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\bin\Debug\net9.0\Biblioteca.dll
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\bin\Debug\net9.0\Biblioteca.pdb
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\obj\Debug\net9.0\Biblioteca.dll
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\obj\Debug\net9.0\refint\Biblioteca.dll
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\obj\Debug\net9.0\Biblioteca.pdb
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\obj\Debug\net9.0\Biblioteca.genruntimeconfig.cache
+E:\hebert\UNA\Modelos e metodos\Biblioteca\Biblioteca\obj\Debug\net9.0\ref\Biblioteca.dll

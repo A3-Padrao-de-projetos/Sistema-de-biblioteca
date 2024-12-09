@@ -1,0 +1,14 @@
+C:\Users\Arthur\source\repos\BibliotecaFactory\bin\Debug\net8.0\BibliotecaFactory.exe
+C:\Users\Arthur\source\repos\BibliotecaFactory\bin\Debug\net8.0\BibliotecaFactory.deps.json
+C:\Users\Arthur\source\repos\BibliotecaFactory\bin\Debug\net8.0\BibliotecaFactory.runtimeconfig.json
+C:\Users\Arthur\source\repos\BibliotecaFactory\bin\Debug\net8.0\BibliotecaFactory.dll
+C:\Users\Arthur\source\repos\BibliotecaFactory\bin\Debug\net8.0\BibliotecaFactory.pdb
+C:\Users\Arthur\source\repos\BibliotecaFactory\obj\Debug\net8.0\BibliotecaFactory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arthur\source\repos\BibliotecaFactory\obj\Debug\net8.0\BibliotecaFactory.AssemblyInfoInputs.cache
+C:\Users\Arthur\source\repos\BibliotecaFactory\obj\Debug\net8.0\BibliotecaFactory.AssemblyInfo.cs
+C:\Users\Arthur\source\repos\BibliotecaFactory\obj\Debug\net8.0\BibliotecaFactory.csproj.CoreCompileInputs.cache
+C:\Users\Arthur\source\repos\BibliotecaFactory\obj\Debug\net8.0\BibliotecaFactory.dll
+C:\Users\Arthur\source\repos\BibliotecaFactory\obj\Debug\net8.0\refint\BibliotecaFactory.dll
+C:\Users\Arthur\source\repos\BibliotecaFactory\obj\Debug\net8.0\BibliotecaFactory.pdb
+C:\Users\Arthur\source\repos\BibliotecaFactory\obj\Debug\net8.0\BibliotecaFactory.genruntimeconfig.cache
+C:\Users\Arthur\source\repos\BibliotecaFactory\obj\Debug\net8.0\ref\BibliotecaFactory.dll
